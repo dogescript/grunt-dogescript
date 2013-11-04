@@ -1,0 +1,46 @@
+{
+  "name": "grunt-dogescript",
+  "description": "much dogescript, such usefull, amaze",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Bartvds/grunt-dogescript",
+  "author": {
+    "name": "Bart van der Schoor",
+    "url": "https://github.com/Bartvds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bartvds/grunt-dogescript"
+  },
+  "bugs": {
+    "url": "https://github.com/Bartvds/grunt-dogescript/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Bartvds/grunt-dogescript/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "gruntplugin",
+    "doge",
+    "wow",
+    "amaze"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-cli": "~0.1",
+    "grunt": "~0.4.1",
+    "dogescript": "~1.2.0"
+  },
+  "peerDependencies": {
+    "grunt": "0.4.1"
+  }
+}
