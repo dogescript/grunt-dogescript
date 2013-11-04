@@ -69,6 +69,8 @@ module.exports = function (grunt) {
 		//loop amaze
 		var success = 0;
 		var failed = 0;
+
+		//TODO implement threaded doge
 		grunt.util.async.forEachLimit(files, 1, function (file, callback) {
 			compileDoge(file, options, function (err) {
 				if (err) {
