@@ -1,8 +1,18 @@
 # grunt-dogescript
 
+![ansi](https://raw.github.com/Bartvds/grunt-dogescript/master/media/doge-01.png)
+
+
 [![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.png?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.png)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.png)](http://badge.fury.io/js/grunt-dogescript)
 
-> Wow, much [dogescript](https://github.com/remixz/dogescript), such usefull [plugin](http://gruntjs.com/), amaze
+>  Wow, such [plugin](http://gruntjs.com/), so [dogescript](https://github.com/remixz/dogescript)
+
+     compile dogescript  
+                         many codes 
+               such syntax
+         wow 
+                   much beauty
+                               amaze          
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -19,14 +29,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-dogescript');
 ```
 
-## The "dogescript" task
-
-     compile dogescript  
-                         many codes
-            such syntax
-       wow 
-              much beauty
-                           amaze                 
+## The "dogescript" task       
 
 ### Default Options
 
