@@ -12,6 +12,7 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-continue');
 
 	grunt.loadTasks('tasks');
 
@@ -32,30 +33,21 @@ module.exports = function (grunt) {
 		dogescript: {
 			basic: {
 				options: {
-					beauty: false
+					beauty: true
 				},
 				src: ['./test/cases/basic/doge.djs']
 			},
-			beauty: {
-				options: {
-					beauty: true
-				},
+			not: {
 				src: ['./test/cases/pretty/doge.djs']
 			}
-		},
-		compare: {
-			all: {
-				options: {
-					fixtures: './test/expected',
-					cases: './test/cases',
-					newline: true
-				},
-				src: ['./test/**/*.js']
-			}
 		}
+
 	});
+	grunt.registerTask('good_doge', ['dogescript:basic']);
+	grunt.registerTask('bad_doge', ['dogescript:not']);
 
 	grunt.registerTask('default', ['test']);
-	grunt.registerTask('test', ['clean', 'jshint', 'dogescript', 'test']);
+	grunt.registerTask('build', ['clean', 'jshint', 'good_doge', 'continueOn', 'bad_doge', 'continueOff']);
+	grunt.registerTask('test', ['build']);
 
 };
