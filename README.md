@@ -1,11 +1,11 @@
 # grunt-dogescript
+--
 
-![wow](https://raw.github.com/Bartvds/grunt-dogescript/master/media/doge-01.jpg)
-
+>  Wow, such [plugin](http://gruntjs.com/), so [dogescript](https://github.com/remixz/dogescript)
 
 [![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.png?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.png)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.png)](http://badge.fury.io/js/grunt-dogescript)
 
->  Wow, such [plugin](http://gruntjs.com/), so [dogescript](https://github.com/remixz/dogescript)
+![wow](https://raw.github.com/Bartvds/grunt-dogescript/master/media/doge-01.jpg)
 
      compile dogescript  
                          many codes 

@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-clean": "~0.1.1",
     "grunt-continue": "0.0.1",
     "grunt-cli": "~0.1",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0"
   },
   "peerDependencies": {
     "grunt": "0.4.1"
