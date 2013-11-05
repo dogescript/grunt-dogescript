@@ -1,5 +1,4 @@
 # grunt-dogescript
---
 
 >  Wow, such [plugin](http://gruntjs.com/), so [dogescript](https://github.com/remixz/dogescript)
 
