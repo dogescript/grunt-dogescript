@@ -1,6 +1,6 @@
 # grunt-dogescript
 
->  Wow, such [plugin](http://gruntjs.com/), so [dogescript](https://github.com/remixz/dogescript)
+>  wow  such [plugin](http://gruntjs.com/) so [dogescript](https://github.com/remixz/dogescript)
 
 [![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.png?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.png)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.png)](http://badge.fury.io/js/grunt-dogescript)
 
@@ -47,7 +47,8 @@ grunt.initConfig({
 
 ## History
 
-* 0.1.0 - First doge, release wow
+* 0.1.2 - much improve
+* 0.1.0 - first doge release wow
 
 
 ## Contributing

@@ -35,7 +35,6 @@ module.exports = function (grunt) {
 		var files = [];
 		var fileCount = 0;
 
-
 		//flatten list for sanity
 		grunt.util._.each(this.files, function (f) {
 			grunt.util._.each(f.src, function (filePath) {
@@ -65,7 +64,6 @@ module.exports = function (grunt) {
 			return;
 		}
 
-
 		//loop amaze
 		var success = 0;
 		var failed = 0;
@@ -91,12 +89,14 @@ module.exports = function (grunt) {
 				grunt.log.writeln(doge.report(['task', 'dogescript', 'compile', 'error'], false));
 				grunt.log.writeln();
 				grunt.log.warn('broken doge!');
+				grunt.log.writeln();
 			}
 			else {
-				if ((failed > 0)) {
+				if (success < fileCount) {
 					grunt.log.writeln(doge.report(['task', (success + ' success').yellow, 'compile', ('failed ' + failed).red, 'error'], false));
 					grunt.log.writeln();
 					grunt.log.warn('bad doge!');
+					grunt.log.writeln();
 				}
 				else {
 					grunt.log.writeln(doge.report(['task', (success + ' success').green, 'compile'], true));
