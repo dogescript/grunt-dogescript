@@ -60,6 +60,7 @@ module.exports = function (grunt) {
 
 			grunt.log.writeln();
 			grunt.log.warn('silly doge!');
+			grunt.log.writeln();
 			done(false);
 			return;
 		}
@@ -88,23 +89,25 @@ module.exports = function (grunt) {
 			if (err) {
 				grunt.log.writeln(doge.report(['task', 'dogescript', 'compile', 'error'], false));
 				grunt.log.writeln();
-				grunt.log.warn('broken doge!');
+				grunt.log.warn('broken doge');
 				grunt.log.writeln();
+				done(false);
 			}
 			else {
-				if (success < fileCount) {
+				if (success < fileCount || fileCount === 0) {
 					grunt.log.writeln(doge.report(['task', (success + ' success').yellow, 'compile', ('failed ' + failed).red, 'error'], false));
 					grunt.log.writeln();
 					grunt.log.warn('bad doge!');
 					grunt.log.writeln();
+					done(false);
 				}
 				else {
 					grunt.log.writeln(doge.report(['task', (success + ' success').green, 'compile'], true));
 					grunt.log.writeln();
 					grunt.log.ok('good doge!');
+					done(true);
 				}
 			}
-			done();
 		});
 	});
 };

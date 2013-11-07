@@ -11,7 +11,8 @@
                such syntax
          wow 
                    much beauty
-                               amaze          
+                               amaze builds
+                                       doge luv hoge         
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -47,8 +48,9 @@ grunt.initConfig({
 
 ## History
 
+* 0.2 - dogescript v1.4.0
 * 0.1.2 - much improve
-* 0.1.0 - first doge release wow
+* 0.1.0 - doge first release
 
 
 ## Contributing
