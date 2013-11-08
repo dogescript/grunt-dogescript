@@ -8,41 +8,74 @@
 
 'use strict';
 
-var dogescript = require('dogescript');
 var doge = require('../lib/doge');
+var dogescript = require('dogescript');
 
 module.exports = function (grunt) {
 
-	function compileDoge(file, options, callback) {
+	function getCompiler(options) {
+		if (options.compiler) {
+			if (typeof options.compiler === 'function') {
+				return options.compiler;
+			}
+			else if (typeof options.compiler === 'string') {
+				var src = options.compiler;
+				try {
+					src =  require.resolve(options.compiler);
+				}
+				catch (e) {
+					grunt.log.writeln();
+					grunt.log.error('plz compiler ' + src);
+					return null;
+				}
+				return require(src);
+			}
+			return null;
+		}
+		return dogescript;
+	}
+
+	function compileDoge(compiler, file, options, callback) {
 		var src = grunt.file.read(file.src);
 		src = src.replace(/(?:\r\n)|\r/g, '\n');
-		var res = dogescript(src, options.beauty);
+
+		var res = compiler(src, options.beauty);
 		if (res) {
 			grunt.file.write(file.dest, res);
 			callback();
 		}
 		else {
-			callback(new Error('much error, compile no'));
+			callback(new Error('much error compile no'));
 		}
 	}
 
-	grunt.registerMultiTask('dogescript', 'doge compile, such codes, many awesome', function () {
+	grunt.registerMultiTask('dogescript', 'doge compile many codes', function () {
 		var options = this.options({
-			beauty: true
+			beauty: true,
+			compiler: null
 		});
 
 		var done = this.async();
 		var files = [];
 		var fileCount = 0;
 
+		var compiler = getCompiler(options);
+		if (!compiler) {
+			grunt.log.writeln();
+			grunt.log.warn('missin doge!');
+			grunt.log.writeln();
+			done(false);
+			return;
+		}
+
 		//flatten list for sanity
 		grunt.util._.each(this.files, function (f) {
 			grunt.util._.each(f.src, function (filePath) {
 				if (!grunt.file.exists(filePath)) {
 					grunt.log.writeln(doge.report(['exist', filePath.red, 'good', 'success'], false));
-
 					grunt.log.writeln();
-					grunt.log.warn('phantom doge!');
+					grunt.log.warn('fantom doge!');
+					grunt.log.writeln();
 					return false;
 				}
 				fileCount++;
@@ -57,9 +90,8 @@ module.exports = function (grunt) {
 		//sad no play doge
 		if (fileCount === 0) {
 			grunt.log.writeln(doge.report(['input', 'source', 'files', 'empty', 'work', 'path', 'compile', 'empty'], false));
-
 			grunt.log.writeln();
-			grunt.log.warn('silly doge!');
+			grunt.log.warn('silli doge!');
 			grunt.log.writeln();
 			done(false);
 			return;
@@ -71,7 +103,7 @@ module.exports = function (grunt) {
 
 		//TODO implement threaded doge
 		grunt.util.async.forEachLimit(files, 1, function (file, callback) {
-			compileDoge(file, options, function (err) {
+			compileDoge(compiler, file, options, function (err) {
 				if (err) {
 					grunt.log.warn(err);
 					grunt.log.writeln(doge.report(['input', file.src.red, 'compile', 'error'], false));
@@ -89,7 +121,7 @@ module.exports = function (grunt) {
 			if (err) {
 				grunt.log.writeln(doge.report(['task', 'dogescript', 'compile', 'error'], false));
 				grunt.log.writeln();
-				grunt.log.warn('broken doge');
+				grunt.log.warn('broke doge');
 				grunt.log.writeln();
 				done(false);
 			}

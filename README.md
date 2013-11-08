@@ -35,20 +35,26 @@ grunt.loadNpmTasks('grunt-dogescript');
 
 ```js
 grunt.initConfig({
-  dogescript: {
-    amaze {
-      options: {
-         beauty:true,
-      },
-      src: ['lib/doge.djs']
-    }
-  }
+	dogescript: {
+		amaze {
+			options: {
+				// optional beautify
+				beauty:true,
+
+				// optional override compiler (handy for bleeding-edge/local editing)
+				// - string path, included via require() 
+				compiler: path.resolve('../dogescript/index.js'),
+			},
+			src: ['lib/doge.djs']
+		}
+	}
 })
 ```
 
 ## History
 
-* 0.2 - dogescript v1.4.0
+* 0.2.1 - add `compiler` option
+* 0.2.0 - dogescript `v1.4.0`
 * 0.1.2 - much improve
 * 0.1.0 - doge first release
 
