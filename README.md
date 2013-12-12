@@ -1,6 +1,6 @@
 # grunt-dogescript
 
->  wow  such [plugin](http://gruntjs.com/) so [dogescript](https://github.com/remixz/dogescript)
+>  wow [plugin](http://gruntjs.com/) so [dogescript](https://github.com/remixz/dogescript)
 
 [![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.png?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.png)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.png)](http://badge.fury.io/js/grunt-dogescript)
 
@@ -8,7 +8,7 @@
 
      compile dogescript  
                          many codes 
-               such syntax
+               many syntax
          wow 
                    much beauty
                                amaze builds
@@ -39,7 +39,12 @@ grunt.initConfig({
 		amaze: {
 			options: {
 				// optional beautify
-				beauty:true,
+				// - default: true
+				beauty: true,
+
+				// optional enable true-doge mode
+				// - default: false
+				trueDoge: true,
 
 				// optional override compiler (handy for bleeding-edge/local editing)
 				// - string path, included via require() 
@@ -53,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.3.0 - dogescript `v2.1.0`, add `trueDoge` option
 * 0.2.1 - add `compiler` option
 * 0.2.0 - dogescript `v1.4.0`
 * 0.1.2 - much improve

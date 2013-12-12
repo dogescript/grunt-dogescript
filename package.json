@@ -1,7 +1,7 @@
 {
   "name": "grunt-dogescript",
   "description": "much dogescript so usefull",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://github.com/Bartvds/grunt-dogescript",
   "author": {
     "name": "Bart van der Schoor",
@@ -35,7 +35,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "dogescript": "~1.4.0"
+    "dogescript": "~2.1.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",

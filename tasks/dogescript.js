@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 		var src = grunt.file.read(file.src);
 		src = src.replace(/(?:\r\n)|\r/g, '\n');
 
-		var res = compiler(src, options.beauty);
+		var res = compiler(src, options.beauty, options.trueDoge);
 		if (res) {
 			grunt.file.write(file.dest, res);
 			callback();
@@ -52,6 +52,7 @@ module.exports = function (grunt) {
 	grunt.registerMultiTask('dogescript', 'doge compile many codes', function () {
 		var options = this.options({
 			beauty: true,
+			trueDoge: false,
 			compiler: null
 		});
 
