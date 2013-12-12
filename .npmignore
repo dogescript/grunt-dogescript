@@ -9,4 +9,5 @@ Gruntfile.js
 /.idea
 /node_modules
 /test
+/media
 /*.tgz
