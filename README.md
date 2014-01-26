@@ -58,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.4.0 - dogescript `v2.2.0`, dropped deprecated dependencies (thanks @shinnn)
 * 0.3.0 - dogescript `v2.1.0`, add `trueDoge` option
 * 0.2.1 - add `compiler` option
 * 0.2.0 - dogescript `v1.4.0`
