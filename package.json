@@ -35,13 +35,14 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "dogescript": "~2.1.0"
+    "dogescript": "~2.2.0",
+    "async": "~0.2.10"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-jshint": "~0.8.0",
     "grunt-continue": "0.0.1",
     "grunt-cli": "~0.1",
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0"
   },
   "peerDependencies": {
