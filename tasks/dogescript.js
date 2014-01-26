@@ -10,6 +10,7 @@
 
 var doge = require('../lib/doge');
 var dogescript = require('dogescript');
+var async = require('async');
 
 module.exports = function (grunt) {
 
@@ -70,8 +71,8 @@ module.exports = function (grunt) {
 		}
 
 		//flatten list for sanity
-		grunt.util._.each(this.files, function (f) {
-			grunt.util._.each(f.src, function (filePath) {
+		this.files.forEach(function (f) {
+			f.src.forEach(function (filePath) {
 				if (!grunt.file.exists(filePath)) {
 					grunt.log.writeln(doge.report(['exist', filePath.red, 'good', 'success'], false));
 					grunt.log.writeln();
@@ -103,7 +104,7 @@ module.exports = function (grunt) {
 		var failed = 0;
 
 		//TODO implement threaded doge
-		grunt.util.async.forEachLimit(files, 1, function (file, callback) {
+		async.eachLimit(files, 1, function (file, callback) {
 			compileDoge(compiler, file, options, function (err) {
 				if (err) {
 					grunt.log.warn(err);
