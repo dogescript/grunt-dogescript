@@ -10,4 +10,6 @@ Gruntfile.js
 /node_modules
 /test
 /media
+/original
 /*.tgz
+/tasks/*.js

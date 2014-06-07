@@ -28,11 +28,16 @@ module.exports = function (grunt) {
 			},
 			all: [
 				'Gruntfile.js',
-				'lib/**/*.js',
-				'tasks/**/*.js'
+				'lib/**/*.js'
 			]
 		},
 		dogescript: {
+			self: {
+				options: {
+					beauty: true
+				},
+				src: ['./src/doge.djs']
+			},
 			basic: {
 				options: {
 					beauty: true
@@ -60,6 +65,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('good_doge', ['dogescript:basic', 'dogescript:compiler']);
 	grunt.registerTask('bad_doge', ['dogescript:bad', 'dogescript:bad_compiler']);
 
+	grunt.registerTask('dev', ['dogescript:self']);
 	grunt.registerTask('default', ['test']);
 	grunt.registerTask('build', ['clean', 'jshint', 'good_doge', 'continueOn', 'bad_doge', 'continueOff']);
 	grunt.registerTask('test', ['build']);

@@ -32,18 +32,19 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "install": "node ./node_modules/dogescript/bin/dogescript ./tasks/dogescript.djs --beautify > ./tasks/dogescript.js"
   },
   "dependencies": {
-    "dogescript": "~2.2.0",
-    "async": "~0.2.10"
+    "async": "^0.9.0",
+    "dogescript": "~2.3.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-continue": "0.0.1",
-    "grunt-cli": "~0.1",
     "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-cli": "~0.1",
+    "grunt-continue": "0.0.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"

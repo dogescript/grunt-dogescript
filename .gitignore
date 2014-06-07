@@ -4,4 +4,4 @@ tmp
 
 /.idea
 /*.tgz
-
+/tasks/*.js
