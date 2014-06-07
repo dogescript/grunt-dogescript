@@ -8,7 +8,8 @@ loud
 
 trained
 
-so ../lib/doge as doge
+so require-doge as rd
+so ../lib/doge.djs as doge
 so dogescript
 so async
 
@@ -180,7 +181,7 @@ such exported much grunt
         )
     wow
 
-    plz grunt.registerMultiTask with 'dogescript', 'doge compile many codes', task
+    plz grunt.registerMultiTask with 'dogescript', 'doge compile codes', task
 wow
 
 module.exports is exported

@@ -36,7 +36,7 @@ module.exports = function (grunt) {
 				options: {
 					beauty: true
 				},
-				src: ['./src/doge.djs']
+				src: ['./task/doge.djs']
 			},
 			basic: {
 				options: {

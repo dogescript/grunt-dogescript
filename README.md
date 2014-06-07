@@ -2,7 +2,7 @@
 
 >  wow [plugin](http://gruntjs.com/) so [dogescript](https://github.com/remixz/dogescript)
 
-[![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.png?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.png)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.png)](http://badge.fury.io/js/grunt-dogescript)
+[![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.svg?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.svg)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.svg)](http://badge.fury.io/js/grunt-dogescript)
 
 ![wow](https://raw.github.com/Bartvds/grunt-dogescript/master/media/doge-01.jpg)
 
@@ -58,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.5.0 - dogescript `v2.4.0`, task rewritten in dogescript!
 * 0.4.0 - dogescript `v2.2.0`, dropped deprecated dependencies (thanks @shinnn)
 * 0.3.0 - dogescript `v2.1.0`, add `trueDoge` option
 * 0.2.1 - add `compiler` option
@@ -68,7 +69,3 @@ grunt.initConfig({
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Bartvds/grunt-dogescript/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

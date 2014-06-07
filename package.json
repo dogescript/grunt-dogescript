@@ -22,6 +22,7 @@
   ],
   "keywords": [
     "gruntplugin",
+    "dogescript",
     "doge",
     "compiler",
     "wow",
@@ -33,11 +34,12 @@
   },
   "scripts": {
     "test": "grunt test",
-    "install": "node ./node_modules/dogescript/bin/dogescript ./tasks/dogescript.djs --beautify > ./tasks/dogescript.js"
+    "prepublish": "node ./node_modules/dogescript/bin/dogescript ./tasks/dogescript.djs --beautify > ./tasks/dogescript.js"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "dogescript": "~2.3.0"
+    "dogescript": "~2.3.0",
+    "require-doge": "^0.1.3"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
