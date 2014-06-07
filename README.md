@@ -58,7 +58,7 @@ grunt.initConfig({
 
 ## History
 
-* 0.5.0 - dogescript `v2.4.0`, task rewritten in dogescript!
+* 0.5.0 - dogescript `v2.3.0`, task rewritten in dogescript
 * 0.4.0 - dogescript `v2.2.0`, dropped deprecated dependencies (thanks @shinnn)
 * 0.3.0 - dogescript `v2.1.0`, add `trueDoge` option
 * 0.2.1 - add `compiler` option
@@ -68,4 +68,4 @@ grunt.initConfig({
 
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+In lieu of a formal styleguide, take care to maintain the existing doge style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
