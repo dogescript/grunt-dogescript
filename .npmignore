@@ -12,4 +12,4 @@ Gruntfile.js
 /media
 /original
 /*.tgz
-/tasks/*.js
+/tasks/*.djs
