@@ -58,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.5.1 - added licence note to README
 * 0.5.0 - dogescript `v2.3.0`, task rewritten in dogescript
 * 0.4.0 - dogescript `v2.2.0`, dropped deprecated dependencies (thanks @shinnn)
 * 0.3.0 - dogescript `v2.1.0`, add `trueDoge` option
@@ -68,4 +69,11 @@ grunt.initConfig({
 
 
 ## Contributing
+
 In lieu of a formal styleguide, take care to maintain the existing doge style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## License
+
+Copyright (c) 2014 [Bart van der Schoor](https://github.com/Bartvds)
+
+Licensed under the MIT license.

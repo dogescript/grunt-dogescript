@@ -1,7 +1,7 @@
 {
   "name": "grunt-dogescript",
   "description": "much dogescript so usefull",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "homepage": "https://github.com/Bartvds/grunt-dogescript",
   "author": {
     "name": "Bart van der Schoor",
