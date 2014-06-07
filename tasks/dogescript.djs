@@ -111,8 +111,9 @@ such exported much grunt
                     plz line
                     return false
                 wow
-                fileCount++;
-                very dest is f.dest;
+
+                fileCount++
+                very dest is f.dest
                 rly !dest
                     dest is plz filePath.replace with /.djs$/, '.js'
                 wow
@@ -123,8 +124,8 @@ such exported much grunt
                 file.options = options
 
                 plz files.push with file
-            });
-        });
+            })
+        })
 
         shh sad no doge
         rly fileCount is 0
@@ -133,7 +134,7 @@ such exported much grunt
             plz warn with 'silli doge!'
             plz line
             plz done with false
-            return;
+            return
         wow
 
         shh loop amaze
@@ -167,7 +168,7 @@ such exported much grunt
                 rly err
                     plz warn with err
                     plz report with ['input', file.src.red, 'compile', 'error'], false
-                    failed++;
+                    failed++
                 but
                     plz report with ['input', file.src.green, 'compile', 'build', file.dest.cyan, 'code'], true
                     success++
