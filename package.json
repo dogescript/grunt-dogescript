@@ -1,23 +1,23 @@
 {
   "name": "grunt-dogescript",
   "description": "much dogescript so usefull",
-  "version": "0.5.1",
-  "homepage": "https://github.com/Bartvds/grunt-dogescript",
+  "version": "0.5.2",
+  "homepage": "https://github.com/dogescript/grunt-dogescript",
   "author": {
     "name": "Bart van der Schoor",
     "url": "https://github.com/Bartvds"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bartvds/grunt-dogescript"
+    "url": "https://github.com/dogescript/grunt-dogescript"
   },
   "bugs": {
-    "url": "https://github.com/Bartvds/grunt-dogescript/issues"
+    "url": "https://github.com/dogescript/grunt-dogescript/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Bartvds/grunt-dogescript/blob/master/LICENSE-MIT"
+      "url": "https://github.com/dogescript/grunt-dogescript/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [

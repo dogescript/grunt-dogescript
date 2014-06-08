@@ -1,10 +1,10 @@
 # grunt-dogescript
 
->  wow [plugin](http://gruntjs.com/) so [dogescript](https://github.com/remixz/dogescript)
+>  wow [plugin](http://gruntjs.com/) so [dogescript](https://github.com/dogescript/dogescript)
 
-[![Build Status](https://secure.travis-ci.org/Bartvds/grunt-dogescript.svg?branch=master)](http://travis-ci.org/Bartvds/grunt-dogescript) [![Dependency Status](https://gemnasium.com/Bartvds/grunt-dogescript.svg)](https://gemnasium.com/Bartvds/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.svg)](http://badge.fury.io/js/grunt-dogescript)
+[![Build Status](https://secure.travis-ci.org/dogescript/grunt-dogescript.svg?branch=master)](http://travis-ci.org/dogescript/grunt-dogescript) [![Dependency Status](https://gemnasium.com/dogescript/grunt-dogescript.svg)](https://gemnasium.com/dogescript/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.svg)](http://badge.fury.io/js/grunt-dogescript)
 
-![wow](https://raw.github.com/Bartvds/grunt-dogescript/master/media/doge-01.jpg)
+![wow](https://raw.github.com/dogescript/grunt-dogescript/master/media/doge-01.jpg)
 
      compile dogescript  
                          many codes 
@@ -58,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 0.5.2 - moved to dogescript org
 * 0.5.1 - added licence note to README
 * 0.5.0 - dogescript `v2.3.0`, task rewritten in dogescript
 * 0.4.0 - dogescript `v2.2.0`, dropped deprecated dependencies (thanks @shinnn)
