@@ -2,7 +2,7 @@
 
 >  wow [plugin](http://gruntjs.com/) so [dogescript](https://github.com/dogescript/dogescript)
 
-[![Build Status](https://secure.travis-ci.org/dogescript/grunt-dogescript.svg?branch=master)](http://travis-ci.org/dogescript/grunt-dogescript) [![Dependency Status](https://gemnasium.com/dogescript/grunt-dogescript.svg)](https://gemnasium.com/dogescript/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.svg)](http://badge.fury.io/js/grunt-dogescript)
+[![Build Status](https://secure.travis-ci.org/dogescript/grunt-dogescript.svg?branch=master)](http://travis-ci.org/dogescript/grunt-dogescript) [![Dependency Status](https://david-dm.org/dogescript/grunt-dogescript.svg)](https://david-dm.org/dogescript/grunt-dogescript) [![NPM version](https://badge.fury.io/js/grunt-dogescript.svg)](http://badge.fury.io/js/grunt-dogescript)
 
 ![wow](https://raw.github.com/dogescript/grunt-dogescript/master/media/doge-01.jpg)
 
