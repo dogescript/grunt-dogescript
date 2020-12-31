@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 			},
 			compiler: {
 				options: {
-					compiler: path.resolve('./node_modules/dogescript/index.js')
+					compiler: path.resolve('./node_modules/dogescript/dist/dogescript.js')
 				},
 				src: ['./test/cases/compiler/doge.djs']
 			},
