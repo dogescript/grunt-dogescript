@@ -58,6 +58,7 @@ grunt.initConfig({
 
 ## History
 
+* 2.4.0 - support dogescript 2.4.0
 * 0.5.2 - moved to dogescript org
 * 0.5.1 - added licence note to README
 * 0.5.0 - dogescript `v2.3.0`, task rewritten in dogescript

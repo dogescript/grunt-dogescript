@@ -57,7 +57,7 @@ such exported much grunt
                 }
                 catch (e) {
                     plz line
-                    plz error with 'plz compilers', src
+                    plz error with 'plz compilers' src
                 }
             wow
         wow
@@ -69,7 +69,7 @@ such exported much grunt
 
         very res is plz compiler with src options.beauty options.trueDoge
         rly res
-            plz grunt.file.write with file.dest, res
+            plz grunt.file.write with file.dest res
             plz callback
         but
             very error is new Error with 'much error compile'
@@ -104,7 +104,7 @@ such exported much grunt
             plz f.src.forEach with much filePath
                 very exists is plz grunt.file.exists with filePath
                 rly !exists
-                    very res is plz doge.report with ['exist', filePath.red, 'good', 'success'], false
+                    very res is plz doge.report with ['exist' filePath.red 'good' 'success'] false
                     plz line with res
                     plz line
                     plz warn with 'fantom doge!'
@@ -115,7 +115,7 @@ such exported much grunt
                 fileCount++
                 very dest is f.dest
                 rly !dest
-                    dest is plz filePath.replace with /.djs$/, '.js'
+                    dest is plz filePath.replace with /.djs$/ '.js'
                 wow
 
                 very file is {}
@@ -129,7 +129,7 @@ such exported much grunt
 
         shh sad no doge
         rly fileCount is 0
-            plz report with ['input', 'source', 'files', 'empty', 'work', 'path', 'compile', 'empty'], false
+            plz report with ['input' 'source' 'files' 'empty' 'work' 'path' 'compile' 'empty'] false
             plz line
             plz warn with 'silli doge!'
             plz line
@@ -143,34 +143,35 @@ such exported much grunt
 
         such end much err
             rly err
-                plz report with ['task', 'dogescript', 'compile', 'error'], false
+                plz report with ['task' 'dogescript' 'compile' 'error'] false
                 plz line
                 plz warn with 'broke doge'
                 plz line
                 plz done with false
             but rly success < fileCount || fileCount === 0
-                plz report with ['task', [success, ' success'].yellow, 'compile', ('failed ' + failed).red, 'error'], false
+                very failMsg is 'failed' + failed
+                plz report with ['task' [success ' success'].yellow 'compile' failMsg.red 'error'] false
                 plz line
                 plz warn with 'bad doge!'
                 plz line
                 plz done with false
             but
-                plz report with ['task', [success, ' success'].green, 'compile'], true
+                plz report with ['task' [success ' success'].green 'compile'] true
                 plz line
-                plz grunt.log.ok 'good doge!'
+                plz grunt.log.ok with 'good doge!'
                 plz done with true
             wow
         wow
 
         shh TODO implement threaded doge
-        plz async.eachLimit with files, 1, much file callback
-            plz compileDoge with compiler, file, options, much err
+        plz async.eachLimit with files 1 much file callback
+            plz compileDoge with compiler file options much err
                 rly err
                     plz warn with err
-                    plz report with ['input', file.src.red, 'compile', 'error'], false
+                    plz report with ['input' file.src.red 'compile' 'error'] false
                     failed++
                 but
-                    plz report with ['input', file.src.green, 'compile', 'build', file.dest.cyan, 'code'], true
+                    plz report with ['input' file.src.green 'compile' 'build' file.dest.cyan 'code'] true
                     success++
                 wow
                 plz line
@@ -182,7 +183,7 @@ such exported much grunt
         )
     wow
 
-    plz grunt.registerMultiTask with 'dogescript', 'doge compile codes', task
+    plz grunt.registerMultiTask with 'dogescript' 'doge compile codes' task
 wow
 
 module.exports is exported

@@ -11,7 +11,7 @@ so boring as wow
 
 very dogescript is 'such messy; very doge-friendly'
 
-such woof much foo bar bat
+such foow much foo bar bat
     plz console.loge with foo
     such nested
         plz console.loge with ['so', 'wow']
@@ -19,7 +19,7 @@ such woof much foo bar bat
     plz nested
 wow bar
 
-plz woof with 'multiple', 'doge', 'properties wow'
+plz foow with 'multiple', 'doge', 'properties wow'
 
 very cat is 'not a doge'
 
@@ -31,15 +31,15 @@ but
     plz console.loge with 'such impossible'
 wow
 
-many woof is 'doges only' and cat not 'doge' or cat is 'not a doge'
+many foow is 'doges only' and cat not 'doge' or cat is 'not a doge'
     plz console.loge with {such: 'doge'}
 wow
 
-rly woof is 'doges only' and cat not 'doge' or cat is 'not a doge'
+rly foow is 'doges only' and cat not 'doge' or cat is 'not a doge'
     plz console.loge with {such: 'doge', wow: 'dogee'}
 wow
 
-much very woof as 1 next woof lesser 3 next woof more 1
+much very foow as 1 next foow lesser 3 next foow more 1
     plz console.loge with {such: 'doge'}
 wow
 
@@ -56,7 +56,7 @@ very arr is new Array with 0
 
 obj is new Object
 
-module.exports is woof
+woof foow
 
 shh example http server
 so http
