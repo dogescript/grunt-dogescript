@@ -37,7 +37,7 @@
     "prepublish": "node ./node_modules/dogescript/dist/dogescript.bin.js ./tasks/dogescript.djs --beautify > ./tasks/dogescript.js"
   },
   "dependencies": {
-    "async": "^0.9.0",
+    "async": "^2.6.4",
     "dogescript": "2.4.0",
     "require-doge": "^0.1.3"
   },
